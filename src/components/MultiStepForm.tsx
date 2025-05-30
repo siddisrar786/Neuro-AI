@@ -205,7 +205,7 @@ const MultiStepForm = ({ onComplete }: MultiStepFormProps) => {
       
       allSymptoms.forEach(symptom => formDataToSend.append("symptoms", symptom));
 
-      const response = await fetch("https://neuro-ai-backend.onrender.com/predict", {
+      const response = await fetch("https://4b85-2409-40e3-39e-4e10-bcd9-e0f6-75d-97a.ngrok-free.app/predict", {
         method: "POST",
         body: formDataToSend
       });
