@@ -205,7 +205,7 @@ const MultiStepForm = ({ onComplete }: MultiStepFormProps) => {
       
       allSymptoms.forEach(symptom => formDataToSend.append("symptoms", symptom));
 
-      const response = await fetch("http://opinion-lions.gl.at.ply.gg:64348//predict", {
+      const response = await fetch("http://34.70.226.50:8000/predict", {
         method: "POST",
         body: formDataToSend
       });
